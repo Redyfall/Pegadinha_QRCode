@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALERTA DE VÍRUS</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ff0000;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .alert-box {
+            background-color: #660000;
+            padding: 20px;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            max-width: 300px;
+        }
+        .alert-box h1 {
+            font-size: 2em;
+        }
+        .alert-box p {
+            font-size: 1.2em;
+        }
+        .virus-img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .blink {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-box">
+        <img src="https://via.placeholder.com/100x100?text=Virus" alt="Vírus" class="virus-img">
+        <h1 class="blink">Vírus Detectado!</h1>
+        <p>Seu dispositivo foi infectado. Por favor, reinicie agora!</p>
+    </div>
+</body>
+</html>
